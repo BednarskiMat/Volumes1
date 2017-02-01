@@ -1,0 +1,25 @@
+
+
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Volume Pages
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="posts-wrapper row">
+
+          <% @posts.each do |post| %>
+            <div class="col-md-3 portfolio-item">
+                    <figure class="gallery-item">
+                      <%= link_to (image_tag post.image.url(:medium)), post_path(post) %>
+
+                        </figure>
+                        
+            </div>
+              <% end %>
+            </div>

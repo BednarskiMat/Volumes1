@@ -1,0 +1,62 @@
+nav{
+    background: url(seamless-wood.png);
+    padding-bottom: 10px;
+}
+
+#brand{
+    font-size: 25px;
+    color: white;
+}
+
+#navContent{
+    color: white;
+    font-size: 20px;
+}
+
+.gallery-item {
+    height: auto;
+    float: left;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+    .gallery-item:first-child {
+        margin-right: 2.762430939%;
+    }
+
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item:hover .img-title {
+    opacity: 1;
+}
+
+.img-title {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /*opacity: 0;*/
+    display: none; /* comment this out for CSS hover */
+    background-color: #333;
+    /*transition: all 0.5s ease;*/
+}
+
+    .img-title h5  {
+        position: absolute;
+        color: #fff;
+        top: 33%;
+        width: 100%;
+        text-align: center;
+    }
+
+.img-title p  {
+        position: absolute;
+        color: #fff;
+        top: 60%;
+        width: 100%;
+        text-align: center;
+    }

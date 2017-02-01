@@ -1,0 +1,170 @@
+ /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*!
+ * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+
+
+footer {
+    margin: 50px 0;
+}
+
+
+
+.navbar-default{
+    background: url(header.png);
+    padding-bottom: 10px;
+}
+
+#brand{
+    font-size: 25px;
+    color: white;
+}
+
+#navContent{
+    color: white;
+    font-size: 20px;
+
+}
+
+.gallery-item {
+    height: auto;
+    float: left;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+    .gallery-item:first-child {
+        margin-right: 2.762430939%;
+    }
+
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item:hover .img-title {
+    opacity: 1;
+}
+
+.img-title {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /*opacity: 0;*/
+    display: none; /* comment this out for CSS hover */
+    background-color: #333;
+    /*transition: all 0.5s ease;*/
+}
+
+    .img-title h5  {
+        position: absolute;
+        color: #fff;
+        top: 33%;
+        width: 100%;
+        text-align: center;
+    }
+
+.img-title p  {
+        position: absolute;
+        color: #fff;
+        top: 60%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #eeefef;
+  border-radius: 3px;
+}
+
+.edit-links {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+  /*show.html*/
+  .postWrap{
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #eeefef;
+    border-radius: 3px;
+
+  }
+
+  .captionStyle{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #showImage{
+    width: 650px;
+    align-self: center;
+  }
+
+
+  .registration-bg {
+    padding-top: 4em;
+    height: 100%;
+    background-image: url('signin.jpeg');
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .log-in{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    border: none;
+  }
+
+  .panel {
+    border-radius: 8px;
+  }
+
+  .panel-heading{
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .panel-body{
+    width: 40%;
+  }

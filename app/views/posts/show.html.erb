@@ -1,0 +1,89 @@
+<div class="posts-wrapper row">
+  <div class="postWrap">
+  <div class="post">
+    <div class="post-head">
+      <div class="name"></div>
+    </div>
+    <div class="image center-block" id="showImage">
+      <%= image_tag @post.image.url(:medium) %>
+    </div>
+
+    <div class="row">
+      <div class="center block">
+      <div class="col-md-6">
+        <p class="captionStyle"> Owner: </p>
+      </div>
+      <div class="col-md-6">
+        <p class="captionStyle">
+          <%= @post.user.user_name %>
+
+        </p>
+      </div>
+    </div>
+
+<div class="row">
+  <div class="center block">
+  <div class="col-md-6">
+    <p class="captionStyle"> Caption: </p>
+  </div>
+  <div class="col-md-6">
+    <p class="captionStyle">
+      <%= @post.caption %>
+    </p>
+  </div>
+</div>
+
+
+  <div class="center block">
+  <div class="col-md-6">
+    <p class="captionStyle"> Description: </p>
+  </div>
+  <div class="col-md-6">
+    <p class="captionStyle">
+      <%= @post.description %>
+    </p>
+  </div>
+</div>
+
+
+
+
+<div class="center block">
+<div class="col-md-6">
+  <p class="captionStyle"> Contact: </p>
+</div>
+<div class="col-md-6">
+  <p class="captionStyle">
+    <%= @post.contact %>
+  </p>
+</div>
+</div>
+
+<div class="center block">
+<div class="col-md-6">
+  <p class="captionStyle"> Price: </p>
+</div>
+<div class="col-md-6">
+  <p class="captionStyle">
+    <%= @post.price %>
+  </p>
+</div>
+</div>
+
+    <div class="text-center">
+      <%= link_to "Cancel", posts_path %>
+      <% if @post.user.id == current_user.id %>
+  <div class="text-center edit-links">
+    |
+    <%= link_to "Edit Post", edit_post_path(@post) %>
+    |
+    <%= link_to "Delete Post", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %>
+
+  </div>
+<% end %>
+    </div>
+
+  </div>
+  </div>
+</div>
+</div>
